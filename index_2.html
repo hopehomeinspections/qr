@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Nick Linse | Hope Home Inspections</title>
+<style>
+  :root{
+    --navy:#12294a;
+    --navy2:#1c3b66;
+    --gold:#c99a2e;
+    --ink:#1b1f26;
+    --muted:#5c6673;
+    --bg:#f3f5f8;
+    --card:#ffffff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    display:flex;
+    justify-content:center;
+    -webkit-text-size-adjust:100%;
+  }
+  .wrap{width:100%;max-width:440px;padding:0 0 40px}
+  .hero{
+    background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 100%);
+    color:#fff;
+    padding:34px 24px 26px;
+    text-align:center;
+    border-radius:0 0 28px 28px;
+  }
+  .badge{
+    display:inline-block;
+    background:var(--gold);
+    color:#1b1f26;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    padding:5px 12px;
+    border-radius:999px;
+    margin-bottom:16px;
+  }
+  .avatar{
+    width:84px;height:84px;border-radius:50%;
+    background:#fff;color:var(--navy);
+    font-weight:800;font-size:30px;
+    display:flex;align-items:center;justify-content:center;
+    margin:0 auto 14px;
+    box-shadow:0 6px 18px rgba(0,0,0,.25);
+  }
+  h1{font-size:26px;font-weight:800;letter-spacing:-.01em}
+  .role{font-size:15px;opacity:.9;margin-top:4px}
+  .company{font-size:15px;opacity:.85;margin-top:4px}
+  .creds{list-style:none;margin:14px auto 0;padding:12px 0 0;border-top:1px solid rgba(255,255,255,.18);max-width:300px}
+  .creds li{font-size:13.5px;line-height:1.5;opacity:.92;padding:2px 0}
+  .creds li::before{content:"\2713";color:var(--gold);font-weight:700;margin-right:8px}
+  .btns{padding:22px 18px 0;display:flex;flex-direction:column;gap:12px}
+  .btn{
+    display:flex;align-items:center;gap:14px;
+    background:var(--card);
+    border:1px solid #e1e5eb;
+    border-radius:16px;
+    padding:16px 18px;
+    text-decoration:none;
+    color:var(--ink);
+    box-shadow:0 2px 8px rgba(18,41,74,.06);
+    transition:transform .08s ease, box-shadow .08s ease;
+  }
+  .btn:active{transform:scale(.985);box-shadow:0 1px 3px rgba(18,41,74,.1)}
+  .btn.primary{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .btn .ico{
+    flex:0 0 42px;width:42px;height:42px;border-radius:12px;
+    background:rgba(18,41,74,.08);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .btn.primary .ico{background:rgba(255,255,255,.14)}
+  .btn svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .btn .txt{flex:1}
+  .btn .t{font-size:16px;font-weight:700;line-height:1.2}
+  .btn .s{font-size:13px;opacity:.7;margin-top:2px}
+  .btn .chev{opacity:.4}
+  .contact{
+    margin:22px 18px 0;
+    font-size:14.5px;
+    background:var(--card);
+    border:1px solid #e1e5eb;
+    border-radius:16px;
+    padding:16px 18px;
+    font-size:15px;
+  }
+  .contact a{color:var(--navy);text-decoration:none;font-weight:600}
+  .contact div{padding:6px 0;display:flex;justify-content:space-between;gap:12px}
+  .contact div span:first-child{color:var(--muted);font-weight:500;white-space:nowrap}
+  .offer{
+    margin:18px 18px 0;
+    background:#fff8e6;
+    border:1px solid #f0dca6;
+    border-radius:14px;
+    padding:14px 16px;
+    font-size:14px;
+    color:#5a4300;
+    line-height:1.45;
+    text-align:center;
+  }
+  .foot{margin-top:26px;text-align:center;font-size:12px;color:var(--muted);line-height:1.6;padding:0 18px}
+</style>
+<script>
+  // Google Analytics 4. Put your Measurement ID between the quotes below. Leave it empty to turn tracking off.
+  var GA_ID = "G-ZNGC98CB82";
+
+  (function(){
+    if(!GA_ID){ return; }
+    var src = new URLSearchParams(location.search).get("src") || "direct";
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function(){ dataLayer.push(arguments); };
+    gtag("js", new Date());
+    gtag("config", GA_ID, { "traffic_tag": src });
+    document.addEventListener("click", function(e){
+      var a = e.target.closest("a[data-track]");
+      if(a){ gtag("event", a.getAttribute("data-track"), { "traffic_tag": src }); }
+    });
+  })();
+</script>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <div class="avatar">NL</div>
+    <h1>Nick Linse</h1>
+    <div class="company">Hope Home Inspections</div>
+    <ul class="creds">
+      <li>Military Veteran</li>
+      <li>Licensed Home Inspector</li>
+      <li>Licensed Termite/WDO Inspector</li>
+      <li>Licensed Commercial Drone Operator</li>
+    </ul>
+  </div>
+
+  <div class="btns">
+
+    <a class="btn primary" id="saveContact" href="nick-linse.vcf" data-track="save_contact">
+      <span class="ico"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg></span>
+      <span class="txt"><span class="t">Save My Contact</span><br><span class="s">Adds Nick to your phone in one tap</span></span>
+      <span class="chev">&#8250;</span>
+    </a>
+
+    <a class="btn" href="https://www.hopehomeinspections.com/schedule/schedule-hillsborough-home-inspection/" data-track="book_inspection">
+      <span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+      <span class="txt"><span class="t">Book an Inspection</span><br><span class="s">See open dates and schedule online</span></span>
+      <span class="chev">&#8250;</span>
+    </a>
+
+    <a class="btn" href="https://maps.app.goo.gl/ncWqBP53ZCPZzsCFA" data-track="google_reviews">
+      <span class="ico"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+      <span class="txt"><span class="t">Read Our Google Reviews</span><br><span class="s">See what recent clients are saying</span></span>
+      <span class="chev">&#8250;</span>
+    </a>
+
+    <a class="btn" href="https://www.hopehomeinspections.com/tampa/" data-track="website">
+      <span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+      <span class="txt"><span class="t">Visit Our Website</span><br><span class="s">Services, pricing, and what we inspect</span></span>
+      <span class="chev">&#8250;</span>
+    </a>
+
+    <a class="btn" href="https://www.hopehomeinspections.com/sample-reports/" data-track="sample_reports">
+      <span class="ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></span>
+      <span class="txt"><span class="t">View Sample Reports</span><br><span class="s">See exactly what you'll receive</span></span>
+      <span class="chev">&#8250;</span>
+    </a>
+
+  </div>
+
+  <div class="contact">
+    <div><span>Office</span><a href="tel:+18139218887" data-track="call_office">813.921.8887</a></div>
+    <div><span>Cell</span><a href="tel:+18137776265" data-track="call_cell">813.777.6265</a></div>
+    <div><span>Direct</span><a href="mailto:nick-l@hopehomeinspections.com" data-track="email_direct">nick-l@hopehomeinspections.com</a></div>
+    <div><span>Office</span><a href="mailto:info@hopehomeinspections.com" data-track="email_office">info@hopehomeinspections.com</a></div>
+  </div>
+
+  <div class="offer">
+    <strong>$65 off a full home inspection</strong> for active duty military and first responders. Just show proof of service.
+  </div>
+
+  <div class="foot">
+    Serving Hillsborough, Pinellas, and Pasco counties.<br>
+    Office hours Monday through Friday, 8:30 AM to 6:00 PM ET.
+  </div>
+
+</div>
+</body>
+</html>

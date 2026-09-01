@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Linse;Nick;;;
+FN:Nick Linse
+ORG:Hope Home Inspections
+TITLE:Licensed Home Inspector
+TEL;TYPE=WORK,VOICE:+18139218887
+TEL;TYPE=CELL,VOICE:+18137776265
+EMAIL;TYPE=WORK,INTERNET,PREF:nick-l@hopehomeinspections.com
+EMAIL;TYPE=WORK,INTERNET:info@hopehomeinspections.com
+URL:https://www.hopehomeinspections.com/tampa/
+NOTE:Military Veteran, Licensed Home Inspector, Licensed Termite/WDO Inspector, Licensed Commercial Drone Operator. Serving Hillsborough, Pinellas, and Pasco counties. Book online at hopehomeinspections.com.
+END:VCARD
