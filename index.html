@@ -46,12 +46,12 @@
     margin-bottom:16px;
   }
   .avatar{
-    width:84px;height:84px;border-radius:50%;
-    background:#fff;color:var(--navy);
-    font-weight:800;font-size:30px;
-    display:flex;align-items:center;justify-content:center;
+    display:block;
+    width:112px;height:112px;border-radius:50%;
+    object-fit:cover;background:#fff;
+    border:3px solid #fff;
     margin:0 auto 14px;
-    box-shadow:0 6px 18px rgba(0,0,0,.25);
+    box-shadow:0 6px 18px rgba(0,0,0,.3);
   }
   h1{font-size:26px;font-weight:800;letter-spacing:-.01em}
   .role{font-size:15px;opacity:.9;margin-top:4px}
@@ -135,7 +135,7 @@
 <div class="wrap">
 
   <div class="hero">
-    <div class="avatar">NL</div>
+    <img class="avatar" src="nick.jpg" alt="Nick Linse" width="480" height="480">
     <h1>Nick Linse</h1>
     <div class="company">Hope Home Inspections</div>
     <ul class="creds">
